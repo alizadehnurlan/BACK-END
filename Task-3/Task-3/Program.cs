@@ -79,17 +79,18 @@
 // Task-5
 
 //-------------------------------------------------------------
+
 //int setir = 4;
 //int count = 1;
-//for (int i = 1;i<=setir;i++)
+//for (int i = 1; i <= setir; i++)
 //{
-//    for (int j = 1;j<=i;j++)
+//    for (int j = 1; j <= i; j++)
 //    {
-//        Console.Write(count  );
+//        Console.Write(count);
 //        count++;
 //    }
 //    Console.WriteLine();
-
+//}
 
 //};
 
