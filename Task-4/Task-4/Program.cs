@@ -188,6 +188,34 @@
 //    }
 //};
 
+
+//-------------------------------------------------------------------
+
+//Task-4 version-2
+
+//-------------------------------------------------------------------
+
+//int myNum = 10;
+//int cehd = 2;
+//Console.WriteLine("eded daxil edin");
+//int yourNum = Convert.ToInt32(Console.ReadLine());
+
+
+//for (int i = 0; i < cehd; i++)
+//{
+//    if (yourNum > myNum)
+//    {
+//        Console.WriteLine("asagi");
+//        yourNum = Convert.ToInt32(Console.ReadLine());
+//    }
+//    else if (yourNum < myNum)
+//    {
+//        Console.WriteLine("yuxari");
+//        yourNum = Convert.ToInt32(Console.ReadLine());
+//    }
+//}
+//Console.WriteLine("Uduzdunuz");
+
 //-------------------------------------------------------------------
 
 //Switch
@@ -435,6 +463,10 @@
 //    }
 //};
 //Console.WriteLine(ikiyeBolunen+uceBolunen); 
+
+
+
+
 
 
 
