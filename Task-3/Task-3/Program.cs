@@ -166,25 +166,18 @@
 //}
 
 //-------------------------------------------------------------
-//Minimum.
+//Minimum və Maksimum
 
 //foreach (int i in mixedNums)
 //{
 //    if (i < min)
 //    {
-//        min= i;
+//        min = i;
 //    }
-//}
-
-//-------------------------------------------------------------
-//Maksimum.
-
-//foreach (int i in mixedNums)
+//    else if (i > max)
 //{
-//    if (i > max)
-//    {
-//        max = i;
-//    }
+//    max = i;
+//}
 //}
 
 //-------------------------------------------------------------
@@ -198,7 +191,7 @@
 //-------------------------------------------------------------
 //Ədədi orta.
 
-//double averageValue =(double)total/ mixedNums.Length;
+//double averageValue = (double)total / mixedNums.Length;
 
 //Console.WriteLine("Minimum : " + min);
 //Console.WriteLine("Maksimum : " + max);
@@ -206,10 +199,10 @@
 //Console.WriteLine("Ededi orta: " + averageValue);
 
 //-------------------------------------------------------------
-
-// Task-4
+//Task - 4
 
 //-------------------------------------------------------------
+
 //int[] numbers = { 10, 20, 5, 30, 15, 50, 75, 24 };
 //int num1 = Convert.ToInt32(Console.ReadLine());
 //foreach (int i in numbers)
@@ -255,3 +248,25 @@
 //Console.WriteLine($"Hasil :{min*max}");
 
 
+
+
+
+
+
+
+
+
+
+
+
+int setir = 4;
+int count = 1;
+for (int i = 1; i <= setir; i++)
+{
+    for (int j = 1; j <= i; j++)
+    {
+        Console.Write(count);
+        count++;
+    }
+    Console.WriteLine();
+}
