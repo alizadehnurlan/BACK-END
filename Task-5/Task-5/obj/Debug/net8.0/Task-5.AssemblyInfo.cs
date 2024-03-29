@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Task-4")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Task-5")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+10d9e7eec7fa95aa16214eb8de250fac563b6d21")]
-[assembly: System.Reflection.AssemblyProductAttribute("Task-4")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Task-4")]
+[assembly: System.Reflection.AssemblyProductAttribute("Task-5")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Task-5")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // MSBuild WriteCodeFragment sınıfı tarafından oluşturuldu.

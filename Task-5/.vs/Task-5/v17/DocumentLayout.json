@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\Back-End\\Task-5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EB3415F0-C22D-4BC8-B8FE-2C560DD8D8E0}|Task-5\\Task-5.csproj|c:\\users\\user\\desktop\\back-end\\task-5\\task-5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB3415F0-C22D-4BC8-B8FE-2C560DD8D8E0}|Task-5\\Task-5.csproj|solutionrelative:task-5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Back-End\\Task-5\\Task-5\\Program.cs",
+              "RelativeDocumentMoniker": "Task-5\\Program.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Back-End\\Task-5\\Task-5\\Program.cs",
+              "RelativeToolTip": "Task-5\\Program.cs",
+              "ViewState": "AQIAAH0AAAAAAAAAAAAcwJUAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-29T12:23:52.908Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
