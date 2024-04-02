@@ -150,3 +150,64 @@
 // ????????????????????????????????????????????????
 
 
+
+//string soz=Console.ReadLine();
+//int reqem=int.Parse(soz);
+
+//Console.WriteLine(soz.GetType());
+
+//Console.WriteLine(reqem.GetType());
+
+//-**Task 1 * *.İstifadəçidən iki int tipində ədəd alın. İlk daxil edilən ədədlə ikinci ədədin qiymətini dəyişən parametrli void metod yazın.
+
+
+
+//Console.WriteLine("arrayin uzunlugunu daxil edin");
+//int uzunluq = Convert.ToInt32(Console.ReadLine());
+//string[] arr = new string[uzunluq];
+
+//for (int i = 0; i < arr.Length; i++)
+//{
+//    string sozler = Console.ReadLine();
+//    arr[i] += sozler;
+
+
+//}
+//string axtarilan = Console.ReadLine();
+
+//if (arr.Contains(axtarilan))
+//{
+//    Console.WriteLine(true);
+//}
+//Console.WriteLine(Array.IndexOf(arr,axtarilan));
+
+
+
+
+int myNum = 10;
+int cehd = 2;
+Console.WriteLine("eded daxil edin");
+int yourNum = Convert.ToInt32(Console.ReadLine());
+
+
+for (int i = 0; i < cehd; i++)
+{
+    if (yourNum > myNum)
+    {
+        Console.WriteLine("asagi");
+        yourNum = Convert.ToInt32(Console.ReadLine());
+    }
+    else if (yourNum < myNum)
+    {
+        Console.WriteLine("yuxari");
+        yourNum = Convert.ToInt32(Console.ReadLine());
+    }
+}
+if (yourNum == myNum)
+{
+    Console.WriteLine("qalib");
+}
+else
+{
+    Console.WriteLine("uduzdun");
+}
