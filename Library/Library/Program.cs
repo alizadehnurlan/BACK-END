@@ -8,8 +8,8 @@ journals.Names = new List<string> { "National Geographic", "Time Magazine", "The
 var audio = new AudioBook();
 audio.Names = new List<string> { "Becoming", "Educated: A Memoir", "Born a Crime: Stories from a South African Childhood", "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones" };
 
-string ad = "a";
-string sifre = "a";
+string ad = "admin";
+string sifre = "admin";
 
 Console.WriteLine("İstifadəçi adını daxil edin");
 string istAdi = Console.ReadLine();
@@ -22,7 +22,7 @@ void BookOperation()
     Console.WriteLine("Kitablar sinifində etmək istədiyiniz əməliyyatı daxil edin");
     Console.WriteLine("---------------------------------");
     Console.WriteLine("1) Kitablar siyahısı");
-    Console.WriteLine("2) Kitablar əlavə etmək");
+    Console.WriteLine("2) Kitab əlavə etmək");
     Console.WriteLine("3) Kitablar icarəyə götürmək");
     Console.WriteLine("4) Kitab axtarmaq");
     Console.WriteLine("5) Geri qayıt");
