@@ -111,6 +111,11 @@ while (count < 5)
                         Login();
                         choice = Convert.ToInt32(Console.ReadLine());
                         break;
+                    default:
+                        Console.WriteLine("Proqram bağlanır...");
+                        Thread.Sleep(1000);
+                        Console.Clear();
+                        return;
                 }
             }
             else if (choice == 2)
@@ -146,6 +151,11 @@ while (count < 5)
                         Login();
                         choice = Convert.ToInt32(Console.ReadLine());
                         break;
+                    default:
+                        Console.WriteLine("Proqram bağlanır...");
+                        Thread.Sleep(1000);
+                        Console.Clear();
+                        return;
                 }
             }
             else if (choice == 3)
@@ -181,6 +191,11 @@ while (count < 5)
                         Login();
                         choice = Convert.ToInt32(Console.ReadLine());
                         break;
+                    default:
+                        Console.WriteLine("Proqram bağlanır...");
+                        Thread.Sleep(1000);
+                        Console.Clear();
+                        return;
                 }
             }
         }
