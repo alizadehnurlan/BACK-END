@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PPKfo20UOHPHvOdBNV1IcIkw8MSrWtL9djW4S4ZHlaXY7rdQlY8EOyz7qK0H8KDqNeNm35G44dS9U1URQvw8UA==",
+  "dgSpecHash": "/vh9jMXtTODn83mEBsnKZWO8QKlX1yqHohVLt3H+N9oOgQ+vsQZYEAhiUYxSSmDAwLDPZ0zLxPHk8YKqOZhiPg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\Desktop\\Back-End\\Lesson8\\Lesson8\\Lesson8.csproj",
+  "projectFilePath": "C:\\Users\\USER\\Desktop\\Back-End\\BankAccount\\Lesson8\\Lesson8.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\Back-End\\Lesson8\\",
+  "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\Back-End\\BankAccount\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7B5B259B-B2D5-4F70-ACCC-610A7E9A7898}|Lesson8\\Lesson8.csproj|c:\\users\\user\\desktop\\back-end\\lesson8\\lesson8\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7B5B259B-B2D5-4F70-ACCC-610A7E9A7898}|Lesson8\\Lesson8.csproj|c:\\users\\user\\desktop\\back-end\\bankaccount\\lesson8\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B5B259B-B2D5-4F70-ACCC-610A7E9A7898}|Lesson8\\Lesson8.csproj|solutionrelative:lesson8\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B5B259B-B2D5-4F70-ACCC-610A7E9A7898}|Lesson8\\Lesson8.csproj|c:\\users\\user\\desktop\\back-end\\lesson8\\lesson8\\bank\\bankaccout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7B5B259B-B2D5-4F70-ACCC-610A7E9A7898}|Lesson8\\Lesson8.csproj|c:\\users\\user\\desktop\\back-end\\bankaccount\\lesson8\\bank\\bankaccout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B5B259B-B2D5-4F70-ACCC-610A7E9A7898}|Lesson8\\Lesson8.csproj|solutionrelative:lesson8\\bank\\bankaccout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "BankAccout.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Back-End\\Lesson8\\Lesson8\\Bank\\BankAccout.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Back-End\\BankAccount\\Lesson8\\Bank\\BankAccout.cs",
               "RelativeDocumentMoniker": "Lesson8\\Bank\\BankAccout.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Back-End\\Lesson8\\Lesson8\\Bank\\BankAccout.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Back-End\\BankAccount\\Lesson8\\Bank\\BankAccout.cs",
               "RelativeToolTip": "Lesson8\\Bank\\BankAccout.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAXAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-03T16:02:19.428Z"
             },
@@ -36,11 +36,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Back-End\\Lesson8\\Lesson8\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\Back-End\\BankAccount\\Lesson8\\Program.cs",
               "RelativeDocumentMoniker": "Lesson8\\Program.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\Back-End\\Lesson8\\Lesson8\\Program.cs",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\Back-End\\BankAccount\\Lesson8\\Program.cs",
               "RelativeToolTip": "Lesson8\\Program.cs",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAAAFMAAAAAAAAA",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAACsAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-03T15:55:11.246Z",
               "EditorCaption": ""

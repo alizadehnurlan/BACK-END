@@ -11,7 +11,7 @@ Console.WriteLine("Kart sifrenizi daxil edin...");
 int number = Convert.ToInt32(Console.ReadLine());
 Console.Clear();
 Console.WriteLine("Gozleyin...");
-Thread.Sleep(3000);
+Thread.Sleep(1000);
 Console.Clear();
 
 if (number == bank.card)
@@ -39,6 +39,8 @@ if (number == bank.card)
             switch (secim)
             {
                 case 1:
+                    Console.WriteLine("Gozleyin...");
+                    Thread.Sleep(1000);
                     Console.WriteLine($"Balansiniz {bank.Balance}");
                     break;
                 case 2:
@@ -46,11 +48,11 @@ if (number == bank.card)
                     double miqdar = Convert.ToInt32(Console.ReadLine());
                     bank.medaxil(miqdar);
                     Console.WriteLine("gozleyin...");
-                    Thread.Sleep(3000);
+                    Thread.Sleep(1000);
                     Console.Clear();
                     Console.WriteLine($"Mebleg hesaba ugurla medaxil edildi balans : {bank.Balance}AZN");
                     Console.WriteLine("Kartinizi goturun...");
-                    Thread.Sleep(3000);
+                    Thread.Sleep(1000);
                     Console.Clear();
                     return;
                 case 3:
@@ -59,15 +61,15 @@ if (number == bank.card)
                     Console.WriteLine("Mexaric edeceyiniz meblegi daxil edin");
                     miqdar = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("Gozleyin...");
-                    Thread.Sleep(3000);
+                    Thread.Sleep(1000);
                     Console.Clear();
 
                     if (miqdar < 0)
                     {
                         Console.WriteLine("Mebleg menfi ola bilmez...");
-                        Thread.Sleep(3000);
+                        Thread.Sleep(1000);
                         Console.WriteLine("Kartinizi goturun...");
-                        Thread.Sleep(3000);
+                        Thread.Sleep(1000);
                         Console.Clear();
                         return;
                     }
@@ -76,25 +78,25 @@ if (number == bank.card)
                     {
 
                         Console.WriteLine("Daxil etdiyiniz mebleg hesabinizda movcud deyil");
-                        Thread.Sleep(3000);
+                        Thread.Sleep(1000);
                         Console.WriteLine("Kartinizi goturun...");
-                        Thread.Sleep(3000);
+                        Thread.Sleep(1000);
                         Console.Clear();
                         return;
 
                     }
                     Console.WriteLine("Pullar hesablanir...");
-                    Thread.Sleep(3000);
+                    Thread.Sleep(1000);
                     Console.Clear();
                     bank.mexaric(miqdar);
                     Console.WriteLine($"Mebleg hesabdan ugurla mexaric edildi balans : {bank.Balance}AZN");
                     Console.WriteLine("Kartinizi goturun...");
-                    Thread.Sleep(3000);
+                    Thread.Sleep(1000);
                     Console.Clear();
                     return;
                 case 4:
                     Console.WriteLine($"Kartinizi goturun...");
-                    Thread.Sleep(3000);
+                    Thread.Sleep(1000);
                     Console.Clear();
                     return;
             }
@@ -113,6 +115,6 @@ else
 {
     Console.WriteLine("Kart sifreniz duzgun deyil...");
     Console.WriteLine($"Kartinizi goturun...");
-    Thread.Sleep(3000);
+    Thread.Sleep(1000);
     Console.Clear();
 }
