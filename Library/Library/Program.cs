@@ -60,6 +60,7 @@ void Login()
     Console.WriteLine("1)Kitablar");
     Console.WriteLine("2)Jurnallar");
     Console.WriteLine("3)Səsli kitablar");
+    Console.WriteLine("4)Proqramı bağla");
     Console.WriteLine("---------------------------------");
 }
 int count = 1;
@@ -92,6 +93,10 @@ while (count < 5)
                         Console.WriteLine("---------------------------------");
                         string newBook = Console.ReadLine();
                         books.AddBookList(newBook);
+                        Console.WriteLine("---------------------------------");
+                        Console.WriteLine($"{newBook} adlı kitab kitabxanaya uğurla əlavə olundu");
+                        Console.WriteLine("---------------------------------");
+                        Thread.Sleep(1000);
                         Console.Clear();
                         break;
                     case 3:
@@ -112,10 +117,13 @@ while (count < 5)
                         choice = Convert.ToInt32(Console.ReadLine());
                         break;
                     default:
-                        Console.WriteLine("Proqram bağlanır...");
+                        Console.Clear();
+                        Console.WriteLine("Düzgün seçim edin...");
                         Thread.Sleep(1000);
                         Console.Clear();
-                        return;
+                        Login();
+                        choice = Convert.ToInt32(Console.ReadLine());
+                        break;
                 }
             }
             else if (choice == 2)
@@ -132,6 +140,10 @@ while (count < 5)
                         Console.WriteLine("---------------------------------");
                         string newJournal = Console.ReadLine();
                         journals.AddJournalList(newJournal);
+                        Console.WriteLine("---------------------------------");
+                        Console.WriteLine($"{newJournal} adlı jurnal kitabxanaya uğurla əlavə olundu");
+                        Console.WriteLine("---------------------------------");
+                        Thread.Sleep(1000);
                         Console.Clear();
                         break;
                     case 3:
@@ -152,10 +164,13 @@ while (count < 5)
                         choice = Convert.ToInt32(Console.ReadLine());
                         break;
                     default:
-                        Console.WriteLine("Proqram bağlanır...");
+                        Console.Clear();
+                        Console.WriteLine("Düzgün seçim edin...");
                         Thread.Sleep(1000);
                         Console.Clear();
-                        return;
+                        Login();
+                        choice = Convert.ToInt32(Console.ReadLine());
+                        break;
                 }
             }
             else if (choice == 3)
@@ -172,6 +187,10 @@ while (count < 5)
                         Console.WriteLine("---------------------------------");
                         string newAudio = Console.ReadLine();
                         audio.AddAudiolList(newAudio);
+                        Console.WriteLine("---------------------------------");
+                        Console.WriteLine($"{newAudio} adlı səsli kitab kitabxanaya uğurla əlavə olundu");
+                        Console.WriteLine("---------------------------------");
+                        Thread.Sleep(1000);
                         Console.Clear();
                         break;
                     case 3:
@@ -192,12 +211,24 @@ while (count < 5)
                         choice = Convert.ToInt32(Console.ReadLine());
                         break;
                     default:
-                        Console.WriteLine("Proqram bağlanır...");
+                        Console.Clear();
+                        Console.WriteLine("Düzgün seçim edin...");
                         Thread.Sleep(1000);
                         Console.Clear();
-                        return;
+                        Login();
+                        choice = Convert.ToInt32(Console.ReadLine());
+                        break  ;
                 }
             }
+            else if (choice == 4)
+            {
+                Console.Clear();
+                Console.WriteLine("Proqram bağlanır...");
+                Thread.Sleep(1000);
+                Console.Clear();
+                return;
+            }
+
         }
     }
     else
