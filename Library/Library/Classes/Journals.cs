@@ -2,15 +2,15 @@
 {
     internal class Journals : AllMaterial
     {
-        public new void JournalList()
+        public override void BookList()
         {
             base.BookList();
         }
-        public new void AddJournalList(string newBook)
+        public override void AddBookList(string newBook)
         {
             base.AddBookList(newBook);
         }
-        public new void DeleteJournalList(string removeBook)
+        public override void DeleteBookList(string removeBook)
         {
             foreach (var name in Names)
             {
@@ -25,7 +25,7 @@
             Console.WriteLine("Jurnal tapılmadı");
             Console.WriteLine("---------------------------------");
         }
-        public new void FindJournal(string bookToFind)
+        public override void FindBook(string bookToFind)
         {
             bool found = false;
             foreach (var book in Names)

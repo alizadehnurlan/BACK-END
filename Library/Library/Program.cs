@@ -133,13 +133,13 @@ while (count < 5)
                 switch (journalsChoice)
                 {
                     case 1:
-                        journals.JournalList();
+                        journals.BookList();
                         break;
                     case 2:
                         Console.WriteLine("Əlavə edəcəyiniz jurnalın adını daxil edin");
                         Console.WriteLine("---------------------------------");
                         string newJournal = Console.ReadLine();
-                        journals.AddJournalList(newJournal);
+                        journals.AddBookList(newJournal);
                         Console.WriteLine("---------------------------------");
                         Console.WriteLine($"{newJournal} adlı jurnal kitabxanaya uğurla əlavə olundu");
                         Console.WriteLine("---------------------------------");
@@ -150,13 +150,13 @@ while (count < 5)
                         Console.WriteLine("Kirayəyə götürəcəyiniz jurnalın adını daxil edin");
                         Console.WriteLine("---------------------------------");
                         string rentJournal = Console.ReadLine();
-                        journals.DeleteJournalList(rentJournal);
+                        journals.DeleteBookList(rentJournal);
                         break;
                     case 4:
                         Console.WriteLine("Axtardığınz jurnalın adını daxil edin");
                         Console.WriteLine("---------------------------------");
                         string findJournal = Console.ReadLine();
-                        journals.FindJournal(findJournal);
+                        journals.FindBook(findJournal);
                         break;
                     case 5:
                         Console.Clear();
@@ -180,13 +180,13 @@ while (count < 5)
                 switch (audioChoice)
                 {
                     case 1:
-                        audio.AudioList();
+                        audio.BookList();
                         break;
                     case 2:
                         Console.WriteLine("Əlavə edəcəyiniz səsli kitabın adını daxil edin");
                         Console.WriteLine("---------------------------------");
                         string newAudio = Console.ReadLine();
-                        audio.AddAudiolList(newAudio);
+                        audio.AddBookList(newAudio);
                         Console.WriteLine("---------------------------------");
                         Console.WriteLine($"{newAudio} adlı səsli kitab kitabxanaya uğurla əlavə olundu");
                         Console.WriteLine("---------------------------------");
@@ -197,13 +197,13 @@ while (count < 5)
                         Console.WriteLine("Kirayəyə götürəcəyiniz səsli kitabın  adını daxil edin");
                         Console.WriteLine("---------------------------------");
                         string rentAudio = Console.ReadLine();
-                        audio.DeleteAudioList(rentAudio);
+                        audio.DeleteBookList(rentAudio);
                         break;
                     case 4:
                         Console.WriteLine("Axtardığınz səsli kitabın  adını daxil edin");
                         Console.WriteLine("---------------------------------");
                         string findAudio = Console.ReadLine();
-                        audio.FindAudio(findAudio);
+                        audio.FindBook(findAudio);
                         break;
                     case 5:
                         Console.Clear();
