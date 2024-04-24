@@ -2,6 +2,7 @@
 {
     internal class Journals : AllMaterial
     {
+        public List<string> Names = new List<string> { "National Geographic", "Time Magazine", "The New Yorker", "Vogue" };
         public override void BookList()
         {
             base.BookList();

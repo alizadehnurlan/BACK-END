@@ -2,6 +2,7 @@
 {
     internal class AudioBook:AllMaterial
     {
+        public List<string> Names = new List<string> { "Becoming", "Educated: A Memoir", "Born a Crime: Stories from a South African Childhood", "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones" };;
         public override void BookList()
         {
             base.BookList();
@@ -32,14 +33,14 @@
             {
                 if (book.Equals(bookToFind))
                 {
-                    Console.WriteLine("Jurnal tapıldı: " + book);
+                    Console.WriteLine("Səsli kitab tapıldı: " + book);
                     found = true;
                     break;
                 }
             }
             if (!found)
             {
-                Console.WriteLine("Jurnal tapılmadı!!!");
+                Console.WriteLine("Səsli kitab tapılmadı!!!");
             }
         }
     }

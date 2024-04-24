@@ -1,10 +1,9 @@
-﻿using System.Collections.Generic;
-
+﻿
 namespace Library.Classes
 {
     public class AllMaterial
     {
-        public List<string> Names;
+        public List<string> Names =new List<string> { "Tarix", "Riyaziyyat", "Fizika", "Kimya" };
         public virtual void BookList()
         {
             foreach (var name in Names)

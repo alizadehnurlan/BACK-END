@@ -1,13 +1,11 @@
-﻿using Library.Classes;
+﻿
+using Library.Classes;
+
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-var books = new Books();
-books.Names = new List<string> { "Tarix", "Riyaziyyat", "Fizika", "Kimya" };
-var journals = new Journals();
-journals.Names = new List<string> { "National Geographic", "Time Magazine", "The New Yorker", "Vogue" };
-var audio = new AudioBook();
-audio.Names = new List<string> { "Becoming", "Educated: A Memoir", "Born a Crime: Stories from a South African Childhood", "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones" };
-
+var books=new Books();
+var audio=new AudioBook();
+var journals=new Journals();
 string ad = "admin";
 string sifre = "admin";
 
