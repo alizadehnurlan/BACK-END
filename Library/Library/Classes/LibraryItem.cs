@@ -17,6 +17,10 @@
         public  void AddItem(string newItem)
         {
             Names.Add(newItem);
+            Console.WriteLine("---------------------------------");
+            Console.WriteLine($"{newItem} adlı səsli kitab kitabxanaya uğurla əlavə olundu");
+            Console.WriteLine("---------------------------------");
+           
         }
         public  void DeleteItem(string removeItem)
         {
