@@ -1,5 +1,4 @@
-﻿
-using Library.Classes;
+﻿using Library.Classes;
 
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
@@ -15,37 +14,15 @@ string istAdi = Console.ReadLine();
 Console.WriteLine("Şifrəni daxil edin");
 string istSifresi = Console.ReadLine();
 bool isTrue = true;
-void BookOperation()
-{
-    Console.WriteLine("Kitablar sinifində etmək istədiyiniz əməliyyatı daxil edin");
-    Console.WriteLine("---------------------------------");
-    Console.WriteLine("1) Kitablar siyahısı");
-    Console.WriteLine("2) Kitab əlavə etmək");
-    Console.WriteLine("3) Kitablar icarəyə götürmək");
-    Console.WriteLine("4) Kitab axtarmaq");
-    Console.WriteLine("5) Geri qayıt");
-    Console.WriteLine("---------------------------------");
-}
-void JournalOperation()
-{
-    Console.WriteLine("Jurnallar sinifində etmək istədiyiniz əməliyyatı daxil edin");
-    Console.WriteLine("---------------------------------");
-    Console.WriteLine("1) Jurnalların siyahısı");
-    Console.WriteLine("2) Jurnal əlavə etmək");
-    Console.WriteLine("3) Jurnal icarəyə götürmək");
-    Console.WriteLine("4) Jurnal axtarmaq");
-    Console.WriteLine("5) Geri qayıt");
-    Console.WriteLine("---------------------------------");
-}
 
-void AudioOperation()
+void DisplayMenu(string category)
 {
-    Console.WriteLine("Səsli kitab sinifində etmək istədiyiniz əməliyyatı daxil edin");
+    Console.WriteLine($"{category} sinifində etmək istədiyiniz əməliyyatı daxil edin");
     Console.WriteLine("---------------------------------");
-    Console.WriteLine("1) Səsli kitab siyahısı");
-    Console.WriteLine("2) Səsli kitab əlavə etmək");
-    Console.WriteLine("3) Səsli kitab icarəyə götürmək");
-    Console.WriteLine("4) Səsli kitab axtarmaq");
+    Console.WriteLine($"1) {category} siyahısı");
+    Console.WriteLine($"2) {category} əlavə etmək");
+    Console.WriteLine($"3) {category} icarəyə götürmək");
+    Console.WriteLine($"4) {category} axtarmaq");
     Console.WriteLine("5) Geri qayıt");
     Console.WriteLine("---------------------------------");
 }
@@ -65,7 +42,6 @@ int count = 1;
 
 while (count < 5)
 {
-    count++;
     if (istSifresi == sifre && istAdi == ad)
     {
         Console.WriteLine("Xoş Gəlmisiniz");
@@ -77,20 +53,19 @@ while (count < 5)
         {
             if (choice == 1)
             {
-                BookOperation();
+                DisplayMenu("kitab");
                 int booksChoice = Convert.ToInt32(Console.ReadLine());
                 switch (booksChoice)
                 {
                     case 1:
-                        books.BookList();
+                        books.ItemList();
                         Console.WriteLine("---------------------------------");
-
                         break;
                     case 2:
                         Console.WriteLine("Əlavə edəcəyiniz kitabın adını daxil edin");
                         Console.WriteLine("---------------------------------");
-                        string newBook = Console.ReadLine();
-                        books.AddBookList(newBook);
+                        string? newBook = Console.ReadLine();
+                        books.AddItem(newBook);
                         Console.WriteLine("---------------------------------");
                         Console.WriteLine($"{newBook} adlı kitab kitabxanaya uğurla əlavə olundu");
                         Console.WriteLine("---------------------------------");
@@ -100,14 +75,14 @@ while (count < 5)
                     case 3:
                         Console.WriteLine("Kirayəyə götürəcəyiniz kitabın adını daxil edin");
                         Console.WriteLine("---------------------------------");
-                        string rentBook = Console.ReadLine();
-                        books.DeleteBookList(rentBook);
+                        string? rentBook = Console.ReadLine();
+                        books.DeleteItem(rentBook);
                         break;
                     case 4:
                         Console.WriteLine("Axtardığınz kitabın adını daxil edin");
                         Console.WriteLine("---------------------------------");
-                        string findBook = Console.ReadLine();
-                        books.FindBook(findBook);
+                        string? findBook = Console.ReadLine();
+                        books.FindItem(findBook);
                         break;
                     case 5:
                         Console.Clear();
@@ -119,25 +94,23 @@ while (count < 5)
                         Console.WriteLine("Düzgün seçim edin...");
                         Thread.Sleep(1000);
                         Console.Clear();
-                        Login();
-                        choice = Convert.ToInt32(Console.ReadLine());
                         break;
                 }
             }
             else if (choice == 2)
             {
-                JournalOperation();
+                DisplayMenu("Jurnal");
                 int journalsChoice = Convert.ToInt32(Console.ReadLine());
                 switch (journalsChoice)
                 {
                     case 1:
-                        journals.BookList();
+                        journals.ItemList();
                         break;
                     case 2:
                         Console.WriteLine("Əlavə edəcəyiniz jurnalın adını daxil edin");
                         Console.WriteLine("---------------------------------");
-                        string newJournal = Console.ReadLine();
-                        journals.AddBookList(newJournal);
+                        string? newJournal = Console.ReadLine();
+                        journals.AddItem(newJournal);
                         Console.WriteLine("---------------------------------");
                         Console.WriteLine($"{newJournal} adlı jurnal kitabxanaya uğurla əlavə olundu");
                         Console.WriteLine("---------------------------------");
@@ -147,14 +120,14 @@ while (count < 5)
                     case 3:
                         Console.WriteLine("Kirayəyə götürəcəyiniz jurnalın adını daxil edin");
                         Console.WriteLine("---------------------------------");
-                        string rentJournal = Console.ReadLine();
-                        journals.DeleteBookList(rentJournal);
+                        string? rentJournal = Console.ReadLine();
+                        journals.DeleteItem(rentJournal);
                         break;
                     case 4:
                         Console.WriteLine("Axtardığınz jurnalın adını daxil edin");
                         Console.WriteLine("---------------------------------");
-                        string findJournal = Console.ReadLine();
-                        journals.FindBook(findJournal);
+                        string? findJournal = Console.ReadLine();
+                        journals.FindItem(findJournal);
                         break;
                     case 5:
                         Console.Clear();
@@ -166,25 +139,23 @@ while (count < 5)
                         Console.WriteLine("Düzgün seçim edin...");
                         Thread.Sleep(1000);
                         Console.Clear();
-                        Login();
-                        choice = Convert.ToInt32(Console.ReadLine());
                         break;
                 }
             }
             else if (choice == 3)
             {
-                AudioOperation();
+                DisplayMenu("Səsli kitab");
                 int audioChoice = Convert.ToInt32(Console.ReadLine());
                 switch (audioChoice)
                 {
                     case 1:
-                        audio.BookList();
+                        audio.ItemList();
                         break;
                     case 2:
                         Console.WriteLine("Əlavə edəcəyiniz səsli kitabın adını daxil edin");
                         Console.WriteLine("---------------------------------");
-                        string newAudio = Console.ReadLine();
-                        audio.AddBookList(newAudio);
+                        string? newAudio = Console.ReadLine();
+                        audio.AddItem(newAudio);
                         Console.WriteLine("---------------------------------");
                         Console.WriteLine($"{newAudio} adlı səsli kitab kitabxanaya uğurla əlavə olundu");
                         Console.WriteLine("---------------------------------");
@@ -194,14 +165,14 @@ while (count < 5)
                     case 3:
                         Console.WriteLine("Kirayəyə götürəcəyiniz səsli kitabın  adını daxil edin");
                         Console.WriteLine("---------------------------------");
-                        string rentAudio = Console.ReadLine();
-                        audio.DeleteBookList(rentAudio);
+                        string? rentAudio = Console.ReadLine();
+                        audio.DeleteItem(rentAudio);
                         break;
                     case 4:
                         Console.WriteLine("Axtardığınz səsli kitabın  adını daxil edin");
                         Console.WriteLine("---------------------------------");
-                        string findAudio = Console.ReadLine();
-                        audio.FindBook(findAudio);
+                        string? findAudio = Console.ReadLine();
+                        audio.FindItem(findAudio);
                         break;
                     case 5:
                         Console.Clear();
@@ -213,8 +184,7 @@ while (count < 5)
                         Console.WriteLine("Düzgün seçim edin...");
                         Thread.Sleep(1000);
                         Console.Clear();
-                        Login();
-                        choice = Convert.ToInt32(Console.ReadLine());
+           
                         break  ;
                 }
             }
@@ -239,6 +209,7 @@ while (count < 5)
         Console.WriteLine("Şifrəni daxil edin");
         istSifresi = Console.ReadLine();
     }
+    count++;
 }
 
 Console.WriteLine("Cəhdlər uğursuzdur");

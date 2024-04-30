@@ -1,51 +1,53 @@
-﻿
-namespace Library.Classes
+﻿namespace Library.Classes
 {
-    public class AllMaterial
+    public class LibraryItem
     {
-        public List<string> Names =new List<string> { "Tarix", "Riyaziyyat", "Fizika", "Kimya" };
-        public virtual void BookList()
+        public List<string> Names;
+        public LibraryItem()
+        {
+            Names = new List<string>();
+        }
+        public  void ItemList()
         {
             foreach (var name in Names)
             {
                 Console.WriteLine(name);
             }
         }
-        public virtual void AddBookList(string newBook)
+        public  void AddItem(string newItem)
         {
-            Names.Add(newBook);
+            Names.Add(newItem);
         }
-        public virtual void DeleteBookList(string removeBook)
+        public  void DeleteItem(string removeItem)
         {
             foreach (var name in Names)
             {
-                if (name == removeBook)
+                if (name == removeItem)
                 {
-                    Names.Remove(removeBook);
-                    Console.WriteLine("Kitab icarəyə götürüldü");
+                    Names.Remove(removeItem);
+                    Console.WriteLine($"{removeItem} məhsulu uğurla icarəyə götürüldü ");
                     return;
                 }
             }
             Console.WriteLine("---------------------------------");
-            Console.WriteLine("Kitab tapılmadı");
+            Console.WriteLine($"{removeItem} məhsulu tapılmadı");
             Console.WriteLine("---------------------------------");
         }
-        public virtual void FindBook(string bookToFind)
+        public  void FindItem(string itemToFind)
         {
             foreach (var book in Names)
             {
-                if (bookToFind == book)
+                if (itemToFind == book)
                 {
                     Console.WriteLine("---------------------------------");
-                    Console.WriteLine("Kitab tapıldı: " + book);
+                    Console.WriteLine($"{itemToFind} məhsulu tapıldı: " + book);
                     Console.WriteLine("---------------------------------");
                     return;
                 }
             }
             Console.WriteLine("---------------------------------");
-            Console.WriteLine("Kitab tapılmadı");
+            Console.WriteLine($"{itemToFind} məhsulu tapılmadı");
             Console.WriteLine("---------------------------------");
         }
-
     }
 }
